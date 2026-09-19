@@ -64,5 +64,5 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Airloom Energy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Airloom Energy is a Laramie, Wyoming wind-energy hardware company engineering next-generation utility-scale turbines built on a low-profile track-and-wing architecture. It builds physical generation equipment and publishes no developer program, API, SDK or machine-readable contract (probed 2026-09-19 — see `llms/airloom-energy-llms.txt` and `well-known/airloom-energy-well-known.yml` for the probe record).
+- https://www.airloom.energy/

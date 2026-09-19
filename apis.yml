@@ -1,8 +1,14 @@
 aid: airloom-energy
 name: Airloom Energy
-description: 'Airloom Energy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: Airloom Energy is a Laramie, Wyoming wind-energy hardware company engineering next-generation utility-scale
+  turbines that use a low-profile track-and-wing architecture instead of a conventional tower, aiming for low-cost,
+  mass-manufacturable, high-energy-density generation that can be deployed at low-wind, height-restricted and hard-to-access
+  sites. Backed by Breakthrough Energy Ventures, Lowercarbon Capital, MCJ, Crosscut and Woven Earth, the company
+  ran a kilowatt-scale prototype in 2023, engineered a pilot system in 2024, is operating the pilot in 2025 and
+  targets a commercial demonstration in 2027. It builds physical generation equipment and publishes no developer
+  program, API, SDK or machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/airloom-energy/refs/heads/main/apis.yml
+image: https://www.airloom.energy/favicon/favicon-32x32.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +18,13 @@ created: '2026-09-19'
 modified: '2026-09-19'
 tags:
 - Company
+- Energy
+- Wind Energy
+- Renewable Energy
+- Clean Energy
+- Hardware
+- Climate Tech
+- Utilities
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +33,41 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.airloom.energy/
+- type: DomainSecurity
+  url: security/airloom-energy-domain-security.yml
+- type: Support
+  url: mailto:info@airloom.energy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/airloom-energy/
+- type: Careers
+  url: https://ats.rippling.com/airloom-open-roles/jobs
+- type: LLMsTxt
+  url: llms/airloom-energy-llms.txt
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: 'Airloom Energy is a Laramie, Wyoming wind-turbine hardware startup whose only web presence is a single-page
+    Next.js marketing site at www.airloom.energy: no api./docs./developer./mcp. subdomain resolves, every OpenAPI/GraphQL/AsyncAPI/llms.txt
+    and /.well-known/ path returns a real 404, its GitHub org (AirloomEnergy) has zero public repositories, and
+    the Nasdaq Private Market page the stub carried as its Website was a secondary-market venue listing, not the
+    company.'
+  evidence:
+  - url: https://www.airloom.energy/
+    status: 200
+  - url: https://www.airloom.energy/openapi.json
+    status: 404
+  - url: https://www.airloom.energy/docs
+    status: 404
+  - url: https://www.airloom.energy/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/airloomenergy
+    status: 200
+  - url: https://www.nasdaqprivatemarket.com/
+    status: 200
+  checked: '2026-09-19'

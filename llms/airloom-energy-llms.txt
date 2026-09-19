@@ -1,0 +1,51 @@
+# Airloom Energy
+
+> Airloom Energy is a Laramie, Wyoming wind-energy hardware company engineering next-generation
+> utility-scale turbines built on a low-profile track-and-wing architecture instead of a conventional
+> tower. It targets low-cost, mass-manufacturable, high-energy-density generation for low-wind,
+> height-restricted and hard-to-access sites, and is backed by Breakthrough Energy Ventures,
+> Lowercarbon Capital, MCJ, Crosscut and Woven Earth.
+
+<!-- generated: 2026-09-19 | method: generated | source: apis.yml + live probes of www.airloom.energy
+     This file is written by API Evangelist. Airloom Energy does not serve an /llms.txt. -->
+
+## Answer first: does Airloom Energy publish an API?
+
+No. As of 2026-09-19, Airloom Energy operates **no public developer program, no API, no SDK and no
+machine-readable API artifacts**. This was established by probe, not assumption:
+
+- No `api.`, `docs.`, `developer.`, `developers.`, `mcp.` or `status.` subdomain of `airloom.energy`
+  resolves in DNS (all NXDOMAIN).
+- `/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/v1/openapi.json`, `/api-docs`, `/docs`,
+  `/redoc`, `/api`, `/graphql`, `/asyncapi.yaml`, `/apis.json` and `/llms.txt` all return a real
+  HTTP 404 on `www.airloom.energy` (the apex `airloom.energy` 308s to `www` for every path).
+- Every `/.well-known/` discovery path (security.txt, openid-configuration,
+  oauth-authorization-server, oauth-protected-resource, api-catalog, ai-plugin.json,
+  agent-card.json, agent.json) returns 404 — see `well-known/airloom-energy-well-known.yml`.
+- `github.com/AirloomEnergy` exists but publishes **zero** public repositories and carries no
+  name or website, so it cannot be attributed to the company.
+- The npm package `airloom` is an unrelated personal project (BobStrogg/Airloom), not this company.
+- `airloomenergy.com` (the `.com` spelling) is a Cloudflare 403 and is not this company's site.
+
+If you are an agent looking for an Airloom Energy API to call, there is not one. Do not synthesize
+a base URL or an endpoint — none is published.
+
+## What the company is
+
+Airloom builds physical generation equipment. Its published technical roadmap: kilowatt-scale
+prototype (2023), pilot design (2024), pilot operations with power-production and CAPEX validation
+(2025), commercial demonstration system (2027). It is designed and built in Laramie, Wyoming
+(5452 Aerospace Drive, Laramie, WY 82070).
+
+## Public company surfaces
+
+- [Website](https://www.airloom.energy/) — single-page marketing site
+- [Contact](mailto:info@airloom.energy)
+- [LinkedIn](https://www.linkedin.com/company/airloom-energy/)
+- [Open roles](https://ats.rippling.com/airloom-open-roles/jobs)
+
+## API Evangelist profile artifacts
+
+- [Domain security probe](security/airloom-energy-domain-security.yml) — TLS 1.3, HSTS, SPF, DMARC p=reject; no DNSSEC, no CAA
+- [Well-known probe record](well-known/airloom-energy-well-known.yml) — all paths 404
+- [Regulatory posture](regulatory/airloom-energy-regulatory-posture.yml) — no published signals

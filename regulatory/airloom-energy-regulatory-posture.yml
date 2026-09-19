@@ -1,0 +1,24 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+source: https://www.airloom.energy/
+note: >-
+  Airloom Energy publishes a single-page marketing site with no legal, privacy, security,
+  accessibility or documentation pages; every conventional path probed returned a real 404.
+  No prior artifacts (security.txt, trust center, lifecycle, conformance) exist to harvest from.
+  An empty signals map is the measurement, not a gap in the pass.
+probed:
+- {url: https://www.airloom.energy/accessibility, status: 404}
+- {url: https://www.airloom.energy/accessibility/vpat, status: 404}
+- {url: https://www.airloom.energy/legal/subprocessors, status: 404}
+- {url: https://www.airloom.energy/legal/dpa, status: 404}
+- {url: https://www.airloom.energy/privacy/requests, status: 404}
+- {url: https://www.airloom.energy/transparency, status: 404}
+- {url: https://www.airloom.energy/security/sbom, status: 404}
+- {url: https://www.airloom.energy/docs/data-residency, status: 404}
+- {url: https://www.airloom.energy/ai/transparency, status: 404}
+- {url: https://www.airloom.energy/legal/report-content, status: 404}
+- {url: https://www.airloom.energy/privacy, status: 404}
+- {url: https://www.airloom.energy/terms, status: 404}
+- {url: https://www.airloom.energy/security, status: 404}
+signals: {}
